@@ -3,4 +3,11 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-/* Styles in Log in Page */
+/* Styles in Sign up Page */
+.col-lg-8 img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
