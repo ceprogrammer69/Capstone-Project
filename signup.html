@@ -175,34 +175,7 @@
 
 
 
-<script>
-  // Set the text you want to type
-  var text = "Plan, Promote, Party with Ease";
-  
-  // Get the h1 element by its ID
-  var element = document.getElementById("typing-effect");
-  
-  // Define the typing function
-  function typeWriter(text, i, fnCallback) {
-    if (i < text.length && document.hasFocus()) {
-      element.innerHTML += text.charAt(i);
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
-      }, 50);
-    } else if (typeof fnCallback == "function") {
-      setTimeout(fnCallback, 700);
-    }
-  }
-  
-  // Start the typing animation and repeat it every 5 seconds
-  setInterval(function() {
-    // Reset the text to an empty string before starting the animation
-    element.innerHTML = "";
-    typeWriter(text, 0, function() {
-      console.log("Finished typing!");
-    });
-  }, 5000);
-</script>
+
 </body>
 
 </html>
